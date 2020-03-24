@@ -1,6 +1,9 @@
 # Block-matching based single model denoiser using Keras and TensorFlow
 
 ### Meisam Rakhshanfar
+docker run -v /home/jdgalviss/applications/Image-denoising-tensorflow-keras/samples:/usr/src/app/samples -p 8888:8888 -it --rm --gpus all bmcnn
+
+jupyter-lab --no-browser --allow-root --ip 0.0.0.0 --NotebookApp.custom_display_url=http://localhost:8888
 
 
 This is an implementation of block-matching CNN based image denoiser *BMCNN* using Python 3, Keras, and TensorFlow. 
